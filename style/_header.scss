@@ -1,0 +1,99 @@
+.header {
+  background: $colorBackgroundFirst;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+  height: 75px;
+  position: relative;
+  transition: fill 3s;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+  }
+      
+  &__rigth {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+  .burger_menu {
+    .burger_icon {
+      cursor: pointer;
+    }
+      #burger {
+        position: absolute;
+        visibility: hidden;
+        &:not(:checked) ~ .nav {
+          left: -$widthBurgerMenu;
+        }
+      }
+
+      .nav {
+        background: $colorBackgroundSecond;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0);
+        width: $widthBurgerMenu;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 32px;
+        padding-bottom: 12px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 9999;
+        transition: right .3s;
+  
+        .nav__list {
+          list-style: none;
+
+          &__title {
+            color: $colorTitleText;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 24px;
+          }
+
+          &__category {
+            .category__link {
+              color: $colorSelectSite;
+              font-size: 14px;
+              font-weight: 400;
+              margin-bottom: 12px;
+            }
+  
+            &__sublist {
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              gap: 11px;
+              margin-top: 12px;
+              margin-bottom: 9px;
+              padding-left: 21px;
+              padding-right: 21px;
+                
+              .sublist_chapter {
+                &__link {
+                color: #6F6E6E;
+                font-size: 14px;
+                font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__link {
+    transition: all .3s;
+  }
+  &__img:hover path {
+    fill: $colorSelectSite;
+  }
+}
