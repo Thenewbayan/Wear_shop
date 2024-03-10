@@ -1,10 +1,11 @@
 .top {
   display: flex;
-  gap: 63.42px;
+  gap: 64px;
   background-color: rgba(241, 228, 230, 1);
   
   .main__picture {
     margin-left: -220px;
+    position:static;
   }
   
   .custom__header {
@@ -14,7 +15,6 @@
     margin-bottom: 381px;
   
     .brand-panel {
-      width: 12px;
       height: 92px;
       border-left: 12px solid $colorSelectSite; 
     }
@@ -33,15 +33,11 @@
         color: $colorTitleText;
         font-size: 32px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         line-height: normal;
   
         .highLighting {
           color: $colorSelectSite;
-          font-size: 32px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
         }
       }
     }
@@ -139,7 +135,7 @@
     gap: 30px;
 
     .item {
-      background-color: #f8f8f8;
+      background-color: $backgroundColorSite;
 
       .wrapper {
         position: relative;

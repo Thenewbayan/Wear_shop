@@ -1,10 +1,9 @@
 .top-head {
-  background-color: #f8f3f4;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: $backgroundColorSite;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
+  height: 148px;
   &__heading {
     color: $colorSelectSite;
     font-size: 24px;
